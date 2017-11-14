@@ -28,6 +28,7 @@ public class YoRPG
 	private int moveCount;
 	private boolean gameOver;
 	private int difficulty;
+	private int classP;
 
 	private InputStreamReader isr;
 	private BufferedReader in;
@@ -70,7 +71,7 @@ public class YoRPG
 
 		//This section was changed to handle people putting in weird values
 		boolean hasDifficulty = false;
-
+		boolean hasClass = false;
 		String badValue = "\n Thou must entereth a numeral betwixt 1 and 3! \n \n";
 
 		while (!hasDifficulty) {
@@ -99,8 +100,33 @@ public class YoRPG
 		}
 		catch ( IOException e ) { }
 
+		
+		while (!hasClass){
+			try {
+				System.out.print("Select your class: Heavy(1) Medic(2) Scout(3) ");
+				classP = Integer.parseInt( in.readLine() );
+				if (classP == 1){
+					pat = new Heavy();
+					hasClass = true;
+				}
+				if (classP == 2){
+					pat = new Medic();
+					hasClass = true;
+				}
+				if (classP == 3){
+					pat = new Scout();
+					hasClass = true;
+				}
+			}
+			catch (IOException e) {
+				System.out.print(badValue);
+			}
+			catch (NumberFormatException e) {
+				System.out.print(badValue);
+			}
+		}
 		//instantiate the player's character
-		pat = new Protagonist( name );
+		System.out.print(name + " has spawned as a " + pat._name + "!");
 
 	}//end newGame()
 

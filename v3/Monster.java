@@ -40,33 +40,6 @@ public class Monster extends Character
   }
 
 
-  /*=============================================
-    int attack(Protagonist) -- simulates attack on a Protagonist
-    pre:  Input not null
-    post: Calculates damage to be inflicted, flooring at 0. 
-    Calls opponent's lowerHP() method to inflict damage. 
-    Returns damage dealt.
-    =============================================*/
-  public int attack( Protagonist opponent )
-  {
-    int damage = (int)( (_strength * _attack) - opponent.getDefense() );
-    //System.out.println( "\t\t**DIAG** damage: " + damage );
 
-    if ( damage < 0 )
-	    damage = 0;
-
-    opponent.lowerHP( damage );
-
-    return damage;
-  }//end attack
-
-  /**
-  * Constructor that allows name to be set. Inherits other values
-  * from default constructor
-  **/
-  public Monster(String name) {
-    this();
-    this.name = name;
-  }//end overloaded constructor
 
 }//end class Monster
