@@ -1,18 +1,18 @@
 /**
- * The Knowleadgable Octocats - Oliver Frank, Shayan Chowdhury, Kevin Feng
+ * The Knowledgeable Octocats - Oliver Frank, Shayan Chowdhury, Kevin Feng
  * APCS pd02
- * HW28 -- Ye Olde Role Playing Game
- * 2017-11-09
+ * HW28 -- Ye Olde Role Playing Game, Expanded
+ * 2017-11-13
  **/
 
 /**
  * A Protagonist that can fight Monsters. Has attributes like:
  * <ul>
- * 	<li>name</li>
- *  <li>hp</li>
- * 	<li>strength</li>
- * 	<li>defense</li>
- * 	<li>attack rating</li>
+ * 	<li>_name</li>
+ *  <li>_hitPts</li>
+ * 	<li>_strength</li>
+ * 	<li>_defense</li>
+ * 	<li>_attack</li>
  * </ul>
  * It can only attack currently. It has two attacks, normal and special.
  * The user is able to control this character. This class inherits properties from
@@ -23,7 +23,7 @@
 public class Protagonist extends Character
 {
   // ~~~~~~~~~~~ INSTANCE VARIABLES ~~~~~~~~~~~
-  private String _name = "J. Doe";
+  protected String _name = "J. Doe";
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 

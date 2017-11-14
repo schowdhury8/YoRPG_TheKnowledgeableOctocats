@@ -1,8 +1,8 @@
 /**
  * The Knowledgeable Octocats - Oliver Frank, Shayan Chowdhury, Kevin Feng
  * APCS pd02
- * HW28 -- Ye Olde Role Playing Game
- * 2017-11-09
+ * HW28 -- Ye Olde Role Playing Game, Expanded
+ * 2017-11-13
  **/
 
 

@@ -1,8 +1,8 @@
 /**
  * The Knowledgeable Octocats - Oliver Frank, Shayan Chowdhury, Kevin Feng
  * APCS pd02
- * HW28 -- Ye Olde Role Playing Game
- * 2017-11-09
+ * HW28 -- Ye Olde Role Playing Game, Expanded
+ * 2017-11-13
  **/
 
 import java.io.*;
@@ -104,6 +104,10 @@ public class YoRPG
 
 	}//end newGame()
 
+	public String chooseClass(Protagonist className) {
+		pat = className;
+		return "You have spawned as a "+className._name+"!";
+	}
 
 	/**=============================================
     * boolean playTurn -- simulates a round of combat

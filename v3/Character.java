@@ -1,8 +1,8 @@
 /**
  * The Knowledgeable Octocats - Oliver Frank, Shayan Chowdhury, Kevin Feng
  * APCS pd02
- * HW28 -- Ye Olde Role Playing Game
- * 2017-11-09
+ * HW28 -- Ye Olde Role Playing Game, Expanded
+ * 2017-11-13
  **/
 
 /**
@@ -25,8 +25,8 @@ public class Character
 {
 
   //this feels like a bad idea... but the compiler made me do it!
-  public int _hitPts, _strength, _defense;
-  public double _attack;
+  protected int _hitPts, _strength, _defense;
+  protected double _attack;
 
 
   // ~~~~~~~~~~~~~~ ACCESSORS ~~~~~~~~~~~~~~~~~
