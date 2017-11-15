@@ -21,6 +21,16 @@ public class Heavy extends Protagonist {
         _name = name;
     }
 
+    public void specialize() {
+	_defense /= 2;
+	_attack *= 1.5;
+    }
+
+    public void normalize() {
+	_defense = 50;
+	_attack = .75;
+    }
+    
     //static about() method
     public String about() {
         return "I am Heavy Weapons Guy and I will crush any baby man that comes to fight me. Sandvich will help.";

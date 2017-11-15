@@ -21,6 +21,16 @@ public class Scout extends Protagonist {
         _name = name;
     }
 
+    public void specialize() {
+	_defense /= 2;
+	_attack *= 1.5;
+    }
+
+    public void normalize() {
+	_defense = 25;
+	_attack = 1;
+    }
+
     //static about() method
     public String about() {
         return "Hey you, yeah you. I'm talkin to ya. You know who I am? I'm the most beautiful thing you're ever gonna see in your life, pal. I'm the Scout... and don't you ever forget it.";

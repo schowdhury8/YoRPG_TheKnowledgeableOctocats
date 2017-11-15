@@ -12,13 +12,23 @@ public class Medic extends Protagonist {
         _hitPts = 150;
         _strength = 50;
         _defense = 150;
-        _attack = 0.25;
+        _attack = 0.5;
     }
 
     //Overloaded constructor
     public Medic (String name) {
         this();
         _name = name;
+    }
+
+    public void specialize() {
+	_defense /= 2;
+	_attack *= 1.5;
+    }
+
+    public void normalize() {
+	_defense = 150;
+	_attack = .5;
     }
 
     //static about() method
