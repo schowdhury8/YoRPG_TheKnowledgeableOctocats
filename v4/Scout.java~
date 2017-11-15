@@ -6,30 +6,30 @@
  **/
 
 /**
- * Pickable subclass of Protagonist. Has high hp, average attack, low defense.
+ * Pickable subclass of Protagonist. Has low hp, high attack, low defense.
  * 
  **/
-public class Heavy extends Protagonist {
-    /**
-     * Default Constructor for class.  Sets name to heavy by default.
+public class Scout extends Protagonist {
+     /**
+     * Default Constructor for class.  Sets name to Scout by default.
      **/
-    public Heavy () {
-        _name = "Heavy";
-        _hitPts = 300;
+    public Scout () {
+        _name = "Scout";
+        _hitPts = 125;
         _strength = 100;
-        _defense = 50;
-        _attack = 0.75;
+        _defense = 25;
+        _attack = 1;
     }
 
-    /**
+      /**
      * 1-parameter overloaded constructor.  Allows name to be set to user's choice.
      **/
-    public Heavy (String name) {
+    public Scout (String name) {
         this();
         _name = name;
     }
 
-    /**
+     /**
      * Prepares protagonist for a special attack. Halves defense and 1.5x to attack modifier.
      **/
     public void specialize() {
@@ -41,19 +41,19 @@ public class Heavy extends Protagonist {
      * Prepares protagonist for a normal attack. sets defense and attack modifier to default values.
      **/
     public void normalize() {
-	_defense = 50;
-	_attack = .75;
+	_defense = 25;
+	_attack = 1;
     }
-    
+
     //show health
     public int getHealth() {
     	return _hitPts;
     }
     
     /**
-     * Returns the about string for this protagonist class.  Now with 25% more comrade!
+     * Returns the about string for this protagonist class.  Now with 60% more Bawsten!
      **/
     public String about() {
-        return "I am Heavy Weapons Guy and I will crush any baby man that comes to fight me. Sandvich will help.";
+        return "Hey you, yeah you. I'm talkin to ya. You know who I am? I'm the most beautiful thing you're ever gonna see in your life, pal. I'm the Scout... and don't you ever forget it.";
     }
 }

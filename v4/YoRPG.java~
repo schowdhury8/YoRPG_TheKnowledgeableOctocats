@@ -156,7 +156,7 @@ public class YoRPG
 			
 			int randomNum = (int)(Math.random() * 3)
 			if (randomNum == 0){
-				smaug = new Engineer();
+			
 			}
 			if (randomNum == 1){
 			

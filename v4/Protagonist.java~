@@ -68,6 +68,6 @@ abstract public class Protagonist extends Character
     public abstract String about();
    
    //return the health
-   public abstract int getHealth();
+   public abstract int showHealth();
    
 }//end class Protagonist
