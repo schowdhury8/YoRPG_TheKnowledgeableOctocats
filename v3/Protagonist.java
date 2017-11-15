@@ -19,16 +19,17 @@
  * the Entity class.
  * @author Oliver Frank
  */
-
 abstract public class Protagonist extends Character
 {
     protected String _name;
 
-    /*=============================================
-      default constructor
-      pre:  instance vars are declared
-      post: initializes instance vars.
-      =============================================*/
+    /**
+     * default constructor
+     * <br>
+     * pre:  instance vars are declared
+     * <br>
+     * post: initializes instance vars.
+     **/
     public Protagonist()
     {
 	_hitPts = 125;
@@ -38,11 +39,11 @@ abstract public class Protagonist extends Character
     }
 
     
-    /*=============================================
-      overloaded constructor
-      pre:  instance vars are declared
-      post: initializes instance vars. _name is set to input String.
-      =============================================*/
+    /**
+     * overloaded constructor
+     * pre:  instance vars are declared
+     * post: initializes instance vars. _name is set to input String.
+     **/
     public Protagonist( String name ) {
 	this();
 	_name = name;
@@ -63,6 +64,7 @@ abstract public class Protagonist extends Character
     //revert to normal mode
     public abstract void normalize();
 
+    //return the about string for the protagonist type
     public abstract String about();
    
 }//end class Protagonist

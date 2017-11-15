@@ -1,4 +1,4 @@
-/**
+/*
  * The Knowledgeable Octocats - Oliver Frank, Shayan Chowdhury, Kevin Feng
  * APCS pd02
  * HW28 -- Ye Olde Role Playing Game, Expanded
@@ -18,7 +18,6 @@
  * It can only attack currently. It only has one attack
  * @author Oliver Frank
  */
-
 public class Monster extends Character
 {
 
@@ -26,11 +25,13 @@ public class Monster extends Character
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-  /*=============================================
-    default constructor
-    pre:  instance vars are declared
-    post: initializes instance vars.
-    =============================================*/
+  /**
+   * default constructor. Strength is set to a random value
+   * <br>
+   * pre:  instance vars are declared
+   * <br>
+   * post: initializes instance vars.
+   **/
   public Monster()
   {
     _hitPts = 150;
