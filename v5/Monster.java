@@ -23,7 +23,7 @@ public class Monster extends Character
 
   // ~~~~~~~~~~~ INSTANCE VARIABLES ~~~~~~~~~~~
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+	protected String _name;
 
   /**
    * default constructor. Strength is set to a random value
