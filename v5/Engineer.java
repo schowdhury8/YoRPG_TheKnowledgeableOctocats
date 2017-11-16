@@ -6,18 +6,18 @@
  **/
 
 /**
- * Pickable subclass of Protagonist. Has low hp, high attack, low defense.
+ * Subclass of Monster. Has high defense but low strength
  * 
  **/
 public class Engineer extends Monster {
      /**
-     * Default Constructor for class.  Sets name to Scout by default.
+     * Default Constructor for class.  Sets name to Engineer by default.
      **/
     public Engineer () {
         _name = "Engineer";
         _hitPts = 200;
-        _strength = 80;
-        _defense = 30;
+        _strength = 50;
+        _defense = 60;
         _attack = .8;
     }
 
@@ -30,6 +30,6 @@ public class Engineer extends Monster {
     }
 
     public String about() {
-        return "Hey you, yeah you. I'm talkin to ya. You know who I am? I'm the most beautiful thing you're ever gonna see in your life, pal. I'm the Scout... and don't you ever forget it.";
+        return "I'm the engineer!";
     }
 }
