@@ -44,16 +44,11 @@ public class Heavy extends Protagonist {
 	_defense = 50;
 	_attack = .75;
     }
-    
-    //show health
-    public int getHealth() {
-    	return _hitPts;
-    }
-    
+
     /**
      * Returns the about string for this protagonist class.  Now with 25% more comrade!
      **/
-    public String about() {
+    public static String about() {
         return "I am Heavy Weapons Guy and I will crush any baby man that comes to fight me. Sandvich will help.";
     }
 }

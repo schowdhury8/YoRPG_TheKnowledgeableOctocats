@@ -67,7 +67,4 @@ abstract public class Protagonist extends Character
     //return the about string for the protagonist type
     public abstract String about();
    
-   //return the health
-   public abstract int getHealth();
-   
 }//end class Protagonist

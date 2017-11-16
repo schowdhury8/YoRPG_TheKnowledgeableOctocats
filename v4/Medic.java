@@ -45,10 +45,6 @@ public class Medic extends Protagonist {
 	_attack = .5;
     }
 
-    //show health
-    public int getHealth() {
-    	return _hitPts;
-    }
     /**
      * Returns the about string for this protagonist class.  Now with 33% more Nietzche!
      **/

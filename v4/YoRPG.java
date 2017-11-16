@@ -153,19 +153,7 @@ public class YoRPG
 		else {
 			System.out.println( "\nLo, yonder monster approacheth!" );
 
-			
-			int randomNum = (int)(Math.random() * 3)
-			if (randomNum == 0){
-				smaug = new Engineer();
-			}
-			if (randomNum == 1){
-			
-			}
-			if (randomNum == 2){
-			
-			}
-			smaug = new Engineer();
-			
+			smaug = new Monster();
 
 			while( smaug.isAlive() && pat.isAlive() ) {
 
@@ -179,7 +167,7 @@ public class YoRPG
 			    String badValue = "Thou must entereth a numeral betwixt 1 and 2! \n";
 			    
 			    while (!hasAnswer) {
-			    	try {   System.out.println( "\nYou have " + pat.getHealth() + " points of health.");
+			    	try {
 			    		System.out.println( "\nDo you feel lucky?" );
 			    		System.out.println( "\t1: Nay.\n\t2: Aye!" );
 			    		i = Integer.parseInt( in.readLine() );
