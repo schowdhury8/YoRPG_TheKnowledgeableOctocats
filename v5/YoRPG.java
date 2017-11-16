@@ -148,25 +148,26 @@ public class YoRPG
 		int i = 1;
 		int d1, d2;
 
-		if ( Math.random() >= ( difficulty / 3.0 ) )
-			System.out.println( "\nNothing to see here. Move along!" );
-		else {
-			System.out.println( "\nLo, yonder monster approacheth!" );
-
+		//spawn random type of monster
+			int randomNum = (int)(Math.random() * 3);
 			
-			int randomNum = (int)(Math.random() * 3)
 			if (randomNum == 0){
 				smaug = new Engineer();
 			}
 			if (randomNum == 1){
-			
+				smaug = new Spy();
 			}
 			if (randomNum == 2){
-			
+				smaug = new Pyro();
 			}
-			smaug = new Engineer();
 			
+		if ( Math.random() >= ( difficulty / 3.0 ) )
+			System.out.println( "\nNothing to see here. Move along!" );
+		else {
+			System.out.println( "\nLo, yonder " + smaug._name +" approacheth!" );
 
+
+			
 			while( smaug.isAlive() && pat.isAlive() ) {
 
 				// Give user the option of using a special attack:
@@ -208,7 +209,7 @@ public class YoRPG
 				System.out.println( "\n" + pat.getName() + " dealt " + d1 +
 						" points of damage.");
 
-				System.out.println( "\n" + "Ye Olde Monster smacked " + pat.getName() +
+				System.out.println( "\n" + smaug._name + " smacked " + pat.getName() +
 						" for " + d2 + " points of damage.");
 			}//end while
 
@@ -248,6 +249,7 @@ public class YoRPG
 		int encounters = 0;
 
 		while( encounters < MAX_ENCOUNTERS ) {
+			
 			if ( !game.playTurn() )
 				break;
 			encounters++;
